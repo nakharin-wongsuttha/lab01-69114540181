@@ -1,0 +1,5 @@
+git config --global user.name"Saichon-Khukhalamo"
+git config --global user.email"saichom.kh.69@ubu.ac.th"
+git clone ..
+mkdir notes,data
+python main.py
