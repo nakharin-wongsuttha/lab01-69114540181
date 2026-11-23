@@ -1,5 +1,5 @@
-git config --global user.name"Saichon-Khukhalamo"
-git config --global user.email"saichom.kh.69@ubu.ac.th"
-git clone ..
-mkdir notes,data
-python main.py
+git config --global user.name
+git config --global user.email
+git push
+git log --oneline
+git add .
