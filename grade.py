@@ -8,7 +8,7 @@ def average(scores):
 #แปลงคะแนน (0-100) เป็นเกรด ถ้าอยู่นอกช่วงจะเกิด ValueError
 def to_grade(score):
     if score<0 or score>100:
-        raise ValueError("Score must be 0 - 100")
+        raise ValueError("คะแนนต้องอยู่ในช่วง 0 - 100")
     elif score>=80:
         return "A"
     elif score>=70:
@@ -27,5 +27,5 @@ def is_pass(score):
 if __name__=="__main__":
     scores=[85,78,71]
     avg=average(scores)
-    print(f"Average: {avg}")
-    print(f"Grade: {to_grade(avg)}")
+    print(f"คะแนนเเฉลี่ย : {avg}")
+    print(f"เกรดที่ได้ : {to_grade(avg)}")
