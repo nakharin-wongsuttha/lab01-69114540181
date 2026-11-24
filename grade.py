@@ -1,0 +1,28 @@
+def average(scores):
+    if not scores:
+        return 0
+    else:
+        return round(sum(scores)/len(scores),2)
+
+def to_grade(score):
+    if score<0 or score>100:
+        raise ValueError("Score must be 0 - 100")
+    elif score>=80:
+        return "A"
+    elif score>=70:
+        return "B"
+    elif score>=60:
+        return "C"
+    elif score>=50:
+        return "D"
+    else:
+        return "F"
+
+def is_pass(score):
+    return score>=50
+
+if __name__=="__main__":
+    scores=[85,78,71]
+    avg=average(scores)
+    print(f"Average: {avg}")
+    print(f"Grade: {to_grade(avg)}")
