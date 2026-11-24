@@ -1,9 +1,11 @@
+#คืนค่าเฉลี่ยของคะแนน ปัดเศษ 2 ตำแหน่ง ถ้าลิสต์ว่างคืน 0
 def average(scores):
     if not scores:
         return 0
     else:
         return round(sum(scores)/len(scores),2)
 
+#แปลงคะแนน (0-100) เป็นเกรด ถ้าอยู่นอกช่วงจะเกิด ValueError
 def to_grade(score):
     if score<0 or score>100:
         raise ValueError("Score must be 0 - 100")
@@ -18,6 +20,7 @@ def to_grade(score):
     else:
         return "F"
 
+#ผ่านเมื่อได้คะแนนตั้งแต่ 50 ขึ้นไป
 def is_pass(score):
     return score>=50
 
