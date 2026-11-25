@@ -1,9 +1,6 @@
 #คืนค่าเฉลี่ยของคะแนน ปัดเศษ 2 ตำแหน่ง ถ้าลิสต์ว่างคืน 0
 def average(scores):
-    if not scores:
-        return 0
-    else:
-        return round(sum(scores)/len(scores),2)
+   return sum(scores) / len(scores) if scores else 0
 
 #แปลงคะแนน (0-100) เป็นเกรด ถ้าอยู่นอกช่วงจะเกิด ValueError
 def to_grade(score):
