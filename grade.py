@@ -2,6 +2,9 @@
 def average(scores):
    return sum(scores) / len(scores) if scores else 0
 
+def is_pass(score):
+    return score >= 50
+
 #แปลงคะแนน (0-100) เป็นเกรด ถ้าอยู่นอกช่วงจะเกิด ValueError
 def to_grade(score):
     if score<0 or score>100:
