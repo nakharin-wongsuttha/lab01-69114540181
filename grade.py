@@ -27,5 +27,4 @@ def is_pass(score):
 if __name__=="__main__":
     scores=[85,78,71]
     avg=average(scores)
-    print(f"คะแนนเเฉลี่ย : {avg}")
-    print(f"เกรดที่ได้ : {to_grade(avg)}")
+    print(f"คะแนนเเฉลี่ย {avg} กับเกรด {to_grade(avg)}")
