@@ -5,6 +5,10 @@ def average(scores):
 def is_pass(score):
     return score >= 50
 
+#22222
+def is_pass(score):
+    return score >= 50
+
 #แปลงคะแนน (0-100) เป็นเกรด ถ้าอยู่นอกช่วงจะเกิด ValueError
 def to_grade(score):
     if score<0 or score>100:
@@ -19,6 +23,8 @@ def to_grade(score):
         return "D"
     else:
         return "F"
+
+    
 
 #ผ่านเมื่อได้คะแนนตั้งแต่ 50 ขึ้นไป
 def is_pass(score):
